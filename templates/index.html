@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MailGuard AI</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= BACKGROUND ================= -->
+
+<div class="background">
+
+    <div class="glow glow-blue"></div>
+
+    <div class="glow glow-purple"></div>
+
+    <div class="grid"></div>
+
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="brand">
+
+        <div class="brand-icon">
+            🛡️
+        </div>
+
+        <div class="brand-name">
+            MailGuard <span>AI</span>
+        </div>
+
+    </div>
+
+
+    <div class="nav-links">
+
+        <a href="#detector">Detector</a>
+
+        <a href="#features">Features</a>
+
+        <a href="#how">How it works</a>
+
+    </div>
+
+
+    <div class="online">
+
+        <span></span>
+
+        AI SYSTEM ONLINE
+
+    </div>
+
+</nav>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+
+    <div class="hero-content">
+
+
+        <div class="badge">
+
+            <span>✦</span>
+
+            POWERED BY MACHINE LEARNING
+
+        </div>
+
+
+        <h1>
+
+            Your inbox.
+            <br>
+
+            <span>Protected by AI.</span>
+
+        </h1>
+
+
+        <p>
+
+            Detect suspicious emails, identify spam,
+            and protect your digital inbox with
+            intelligent machine learning.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="#detector"
+               class="primary-btn">
+
+                Analyze an Email
+
+                <span>→</span>
+
+            </a>
+
+
+            <a href="#how"
+               class="secondary-btn">
+
+                Learn how it works
+
+            </a>
+
+        </div>
+
+
+        <div class="trust">
+
+            <span>✓</span>
+            Fast analysis
+
+            <span>✓</span>
+            ML powered
+
+            <span>✓</span>
+            Simple & secure
+
+        </div>
+
+    </div>
+
+
+
+    <!-- AI VISUAL -->
+
+    <div class="hero-visual">
+
+
+        <div class="visual-glow"></div>
+
+
+        <div class="shield">
+
+            <div class="shield-inner">
+
+                🛡️
+
+            </div>
+
+        </div>
+
+
+        <div class="floating-card card-top">
+
+            <span>✉️</span>
+
+            <div>
+
+                <small>Email scanned</small>
+
+                <strong>Safe</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="floating-card card-bottom">
+
+            <span>🧠</span>
+
+            <div>
+
+                <small>AI confidence</small>
+
+                <strong>98.7%</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="orbit orbit-one"></div>
+
+        <div class="orbit orbit-two"></div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+
+    <div class="stat">
+
+        <strong>99%</strong>
+
+        <span>Instant analysis</span>
+
+    </div>
+
+
+    <div class="divider"></div>
+
+
+    <div class="stat">
+
+        <strong>AI</strong>
+
+        <span>Machine learning</span>
+
+    </div>
+
+
+    <div class="divider"></div>
+
+
+    <div class="stat">
+
+        <strong>24/7</strong>
+
+        <span>Email protection</span>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= DETECTOR ================= -->
+
+<section id="detector"
+         class="detector-section">
+
+
+    <div class="section-label">
+
+        ✦ AI EMAIL ANALYZER
+
+    </div>
+
+
+    <h2>
+
+        Is this email
+
+        <span>safe?</span>
+
+    </h2>
+
+
+    <p class="section-description">
+
+        Paste an email below and let our machine learning
+        model analyze its content.
+
+    </p>
+
+
+
+    <div class="detector-wrapper">
+
+
+        <div class="detector-card">
+
+
+            <div class="card-title">
+
+                <div class="mail-icon">
+                    ✉
+                </div>
+
+
+                <div>
+
+                    <h3>Email content</h3>
+
+                    <p>
+                        Enter the message you want to analyze
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <form method="POST">
+
+
+                <textarea
+                    name="email"
+                    placeholder="Paste your email message here...
+
+Example:
+
+Congratulations! You have won a $1,000 prize.
+Click here to claim your reward!"
+                    required></textarea>
+
+
+                <div class="analyze-footer">
+
+
+                    <div class="secure">
+
+                        🔒
+
+                        Your message is analyzed securely
+
+                    </div>
+
+
+                    <button type="submit">
+
+                        Analyze Email
+
+                        <span>→</span>
+
+                    </button>
+
+
+                </div>
+
+
+            </form>
+
+
+
+            {% if prediction %}
+
+            <div class="result">
+
+                <div class="result-symbol">
+
+                    {% if "SPAM" in prediction %}
+
+                    🚨
+
+                    {% else %}
+
+                    ✅
+
+                    {% endif %}
+
+                </div>
+
+
+                <div>
+
+                    <small>AI ANALYSIS RESULT</small>
+
+                    <h3>{{ prediction }}</h3>
+
+                </div>
+
+            </div>
+
+            {% endif %}
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= FEATURES ================= -->
+
+<section id="features"
+         class="features-section">
+
+
+    <div class="section-label">
+
+        ✦ WHY MAILGUARD
+
+    </div>
+
+
+    <h2>
+
+        Smart protection.
+
+        <span>Simple experience.</span>
+
+    </h2>
+
+
+    <p class="section-description">
+
+        Built to make email security understandable
+        for everyone.
+
+    </p>
+
+
+
+    <div class="feature-grid">
+
+
+        <div class="feature-card">
+
+            <div class="feature-number">
+                01
+            </div>
+
+            <div class="feature-icon">
+                🧠
+            </div>
+
+            <h3>
+                Machine Learning
+            </h3>
+
+            <p>
+                Our classifier analyzes email content
+                and identifies patterns associated
+                with spam.
+            </p>
+
+        </div>
+
+
+
+        <div class="feature-card">
+
+            <div class="feature-number">
+                02
+            </div>
+
+            <div class="feature-icon">
+                ⚡
+            </div>
+
+            <h3>
+                Instant Detection
+            </h3>
+
+            <p>
+                Get an immediate classification without
+                complicated security tools or settings.
+            </p>
+
+        </div>
+
+
+
+        <div class="feature-card">
+
+            <div class="feature-number">
+                03
+            </div>
+
+            <div class="feature-icon">
+                🛡️
+            </div>
+
+            <h3>
+                Security Focused
+            </h3>
+
+            <p>
+                Identify potentially unwanted messages
+                before they become a problem.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section id="how"
+         class="how-section">
+
+
+    <div class="section-label">
+
+        ✦ HOW IT WORKS
+
+    </div>
+
+
+    <h2>
+
+        Three steps.
+
+        <span>One safer inbox.</span>
+
+    </h2>
+
+
+
+    <div class="steps">
+
+
+        <div class="step">
+
+            <div class="step-circle">
+
+                01
+
+            </div>
+
+            <h3>
+
+                Paste
+
+            </h3>
+
+            <p>
+
+                Enter the suspicious email
+                into the analyzer.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="step-line"></div>
+
+
+
+        <div class="step">
+
+            <div class="step-circle">
+
+                02
+
+            </div>
+
+            <h3>
+
+                Analyze
+
+            </h3>
+
+            <p>
+
+                The machine learning model
+                examines the message.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="step-line"></div>
+
+
+
+        <div class="step">
+
+            <div class="step-circle">
+
+                03
+
+            </div>
+
+            <h3>
+
+                Protect
+
+            </h3>
+
+            <p>
+
+                Receive an instant spam
+                or safe classification.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+
+    <div class="footer-brand">
+
+        🛡️ MailGuard <span>AI</span>
+
+    </div>
+
+
+    <p>
+
+        Intelligent email protection powered by machine learning.
+
+    </p>
+
+
+    <div class="footer-line"></div>
+
+
+    <small>
+
+        © 2026 MailGuard AI · Built with Python, Flask & Machine Learning
+
+    </small>
+
+
+</footer>
+<script>
+    window.addEventListener("load", function () {
+        const result = document.querySelector(".result");
+
+        if (result) {
+            setTimeout(function () {
+                result.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+            }, 100);
+        }
+    });
+</script>
+
+</body>
+</html>
+
+</body>
+
+</html>

@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta name="viewport"
@@ -23,14 +22,40 @@
     <!-- CSS -->
     <link rel="stylesheet"
           href="{{ url_for('static', filename='style.css') }}">
-
 </head>
 
 
 <body>
 
+<!-- =====================================================
+     3D FLOATING BACKGROUND
+     ===================================================== -->
 
-<!-- ================= BACKGROUND ================= -->
+<div class="floating-3d-bg" aria-hidden="true">
+
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="floating-shape shape-1">◇</div>
+    <div class="floating-shape shape-2">◈</div>
+    <div class="floating-shape shape-3">⬡</div>
+    <div class="floating-shape shape-4">◇</div>
+
+    <div class="network-line line-1"></div>
+    <div class="network-line line-2"></div>
+    <div class="network-line line-3"></div>
+
+    <div class="depth-ring ring-1"></div>
+    <div class="depth-ring ring-2"></div>
+    <div class="depth-ring ring-3"></div>
+
+</div>
+
+
+<!-- =====================================================
+     NORMAL BACKGROUND
+     ===================================================== -->
 
 <div class="background">
 
@@ -43,7 +68,9 @@
 </div>
 
 
-<!-- ================= NAVBAR ================= -->
+<!-- =====================================================
+     NAVBAR
+     ===================================================== -->
 
 <nav class="navbar">
 
@@ -62,11 +89,17 @@
 
     <div class="nav-links">
 
-        <a href="#detector">Detector</a>
+        <a href="#detector">
+            Detector
+        </a>
 
-        <a href="#features">Features</a>
+        <a href="#features">
+            Features
+        </a>
 
-        <a href="#how">How it works</a>
+        <a href="#how">
+            How it works
+        </a>
 
     </div>
 
@@ -82,14 +115,13 @@
 </nav>
 
 
-
-<!-- ================= HERO ================= -->
+<!-- =====================================================
+     HERO
+     ===================================================== -->
 
 <section class="hero">
 
-
     <div class="hero-content">
-
 
         <div class="badge">
 
@@ -157,11 +189,9 @@
     </div>
 
 
-
     <!-- AI VISUAL -->
 
     <div class="hero-visual">
-
 
         <div class="visual-glow"></div>
 
@@ -211,24 +241,24 @@
 
         <div class="orbit orbit-two"></div>
 
-
     </div>
-
 
 </section>
 
 
-
-<!-- ================= STATS ================= -->
+<!-- =====================================================
+     STATS
+     ===================================================== -->
 
 <section class="stats">
-
 
     <div class="stat">
 
         <strong>99%</strong>
 
-        <span>Instant analysis</span>
+        <span>
+            Instant analysis
+        </span>
 
     </div>
 
@@ -240,7 +270,9 @@
 
         <strong>AI</strong>
 
-        <span>Machine learning</span>
+        <span>
+            Machine learning
+        </span>
 
     </div>
 
@@ -252,20 +284,21 @@
 
         <strong>24/7</strong>
 
-        <span>Email protection</span>
+        <span>
+            Email protection
+        </span>
 
     </div>
-
 
 </section>
 
 
-
-<!-- ================= DETECTOR ================= -->
+<!-- =====================================================
+     DETECTOR
+     ===================================================== -->
 
 <section id="detector"
          class="detector-section">
-
 
     <div class="section-label">
 
@@ -291,12 +324,9 @@
     </p>
 
 
-
     <div class="detector-wrapper">
 
-
         <div class="detector-card">
-
 
             <div class="card-title">
 
@@ -307,7 +337,9 @@
 
                 <div>
 
-                    <h3>Email content</h3>
+                    <h3>
+                        Email content
+                    </h3>
 
                     <p>
                         Enter the message you want to analyze
@@ -319,7 +351,6 @@
 
 
             <form method="POST">
-
 
                 <textarea
                     name="email"
@@ -333,7 +364,6 @@ Click here to claim your reward!"
 
 
                 <div class="analyze-footer">
-
 
                     <div class="secure">
 
@@ -352,12 +382,9 @@ Click here to claim your reward!"
 
                     </button>
 
-
                 </div>
 
-
             </form>
-
 
 
             {% if prediction %}
@@ -381,9 +408,13 @@ Click here to claim your reward!"
 
                 <div>
 
-                    <small>AI ANALYSIS RESULT</small>
+                    <small>
+                        AI ANALYSIS RESULT
+                    </small>
 
-                    <h3>{{ prediction }}</h3>
+                    <h3>
+                        {{ prediction }}
+                    </h3>
 
                 </div>
 
@@ -391,22 +422,19 @@ Click here to claim your reward!"
 
             {% endif %}
 
-
         </div>
 
-
     </div>
-
 
 </section>
 
 
-
-<!-- ================= FEATURES ================= -->
+<!-- =====================================================
+     FEATURES
+     ===================================================== -->
 
 <section id="features"
          class="features-section">
-
 
     <div class="section-label">
 
@@ -432,9 +460,7 @@ Click here to claim your reward!"
     </p>
 
 
-
     <div class="feature-grid">
-
 
         <div class="feature-card">
 
@@ -459,7 +485,6 @@ Click here to claim your reward!"
         </div>
 
 
-
         <div class="feature-card">
 
             <div class="feature-number">
@@ -480,7 +505,6 @@ Click here to claim your reward!"
             </p>
 
         </div>
-
 
 
         <div class="feature-card">
@@ -504,18 +528,17 @@ Click here to claim your reward!"
 
         </div>
 
-
     </div>
 
 </section>
 
 
-
-<!-- ================= HOW IT WORKS ================= -->
+<!-- =====================================================
+     HOW IT WORKS
+     ===================================================== -->
 
 <section id="how"
          class="how-section">
-
 
     <div class="section-label">
 
@@ -533,102 +556,77 @@ Click here to claim your reward!"
     </h2>
 
 
-
     <div class="steps">
 
-
         <div class="step">
 
             <div class="step-circle">
-
                 01
-
             </div>
 
             <h3>
-
                 Paste
-
             </h3>
 
             <p>
-
                 Enter the suspicious email
                 into the analyzer.
-
             </p>
 
         </div>
 
 
-
         <div class="step-line"></div>
-
 
 
         <div class="step">
 
             <div class="step-circle">
-
                 02
-
             </div>
 
             <h3>
-
                 Analyze
-
             </h3>
 
             <p>
-
                 The machine learning model
                 examines the message.
-
             </p>
 
         </div>
-
 
 
         <div class="step-line"></div>
 
 
-
         <div class="step">
 
             <div class="step-circle">
-
                 03
-
             </div>
 
             <h3>
-
                 Protect
-
             </h3>
 
             <p>
-
                 Receive an instant spam
                 or safe classification.
-
             </p>
 
         </div>
-
 
     </div>
 
 </section>
 
 
-
-<!-- ================= FOOTER ================= -->
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
 
 <footer>
-
 
     <div class="footer-brand">
 
@@ -653,26 +651,135 @@ Click here to claim your reward!"
 
     </small>
 
-
 </footer>
-<script>
-    window.addEventListener("load", function () {
-        const result = document.querySelector(".result");
 
-        if (result) {
-            setTimeout(function () {
-                result.scrollIntoView({
-                    behavior: "smooth",
-                    block: "center"
-                });
-            }, 100);
-        }
-    });
+
+<!-- =====================================================
+     RESULT AUTO-SCROLL
+     ===================================================== -->
+
+<script>
+
+window.addEventListener("load", function () {
+
+    const result = document.querySelector(".result");
+
+    if (result) {
+
+        setTimeout(function () {
+
+            result.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+        }, 100);
+
+    }
+
+});
+
 </script>
 
-</body>
-</html>
+
+<!-- =====================================================
+     3D CURSOR PARALLAX
+     ===================================================== -->
+
+<script>
+
+const background = document.querySelector(".floating-3d-bg");
+
+if (
+    background &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+) {
+
+    const elements = background.querySelectorAll(
+        ".orb, .floating-shape, .depth-ring, .network-line"
+    );
+
+
+    let targetX = 0;
+    let targetY = 0;
+
+    let currentX = 0;
+    let currentY = 0;
+
+
+    window.addEventListener(
+        "mousemove",
+        function (event) {
+
+            targetX =
+                (event.clientX / window.innerWidth - 0.5) * 2;
+
+            targetY =
+                (event.clientY / window.innerHeight - 0.5) * 2;
+
+        },
+        { passive: true }
+    );
+
+
+    window.addEventListener(
+        "mouseleave",
+        function () {
+
+            targetX = 0;
+            targetY = 0;
+
+        },
+        { passive: true }
+    );
+
+
+    elements.forEach(function (element, index) {
+
+        element.dataset.depth =
+            10 + (index % 5) * 7;
+
+    });
+
+
+    function animateParallax() {
+
+        currentX +=
+            (targetX - currentX) * 0.055;
+
+        currentY +=
+            (targetY - currentY) * 0.055;
+
+
+        elements.forEach(function (element) {
+
+            const depth =
+                Number(element.dataset.depth);
+
+            /*
+             * IMPORTANT:
+             * We use CSS translate instead of transform.
+             * This allows the CSS floating animation
+             * to continue at the same time.
+             */
+
+            element.style.translate =
+                `${currentX * depth}px ${currentY * depth}px`;
+
+        });
+
+
+        requestAnimationFrame(animateParallax);
+
+    }
+
+
+    animateParallax();
+
+}
+
+</script>
+
 
 </body>
-
 </html>

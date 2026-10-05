@@ -1,6 +1,6 @@
-/* =========================================
+/* =========================================================
    GLOBAL
-========================================= */
+   ========================================================= */
 
 * {
     margin: 0;
@@ -21,13 +21,13 @@ body {
     background:
         radial-gradient(
             circle at 15% 10%,
-            rgba(79,70,229,0.22),
+            rgba(79, 70, 229, 0.22),
             transparent 35%
         ),
 
         radial-gradient(
             circle at 85% 20%,
-            rgba(14,165,233,0.18),
+            rgba(14, 165, 233, 0.18),
             transparent 35%
         ),
 
@@ -48,11 +48,12 @@ a {
 }
 
 
-/* =========================================
-   BACKGROUND
-========================================= */
+/* =========================================================
+   NORMAL BACKGROUND
+   ========================================================= */
 
 .background {
+
     position: fixed;
 
     inset: 0;
@@ -62,6 +63,7 @@ a {
     z-index: -1;
 
     overflow: hidden;
+
 }
 
 
@@ -74,13 +76,13 @@ a {
     background-image:
 
         linear-gradient(
-            rgba(255,255,255,0.025) 1px,
+            rgba(255, 255, 255, 0.025) 1px,
             transparent 1px
         ),
 
         linear-gradient(
             90deg,
-            rgba(255,255,255,0.025) 1px,
+            rgba(255, 255, 255, 0.025) 1px,
             transparent 1px
         );
 
@@ -104,7 +106,7 @@ a {
 
     filter: blur(120px);
 
-    opacity: .5;
+    opacity: 0.5;
 
 }
 
@@ -135,9 +137,9 @@ a {
 }
 
 
-/* =========================================
+/* =========================================================
    NAVBAR
-========================================= */
+   ========================================================= */
 
 .navbar {
 
@@ -187,7 +189,7 @@ a {
         );
 
     box-shadow:
-        0 0 30px rgba(59,130,246,.3);
+        0 0 30px rgba(59, 130, 246, 0.3);
 
     font-size: 21px;
 
@@ -228,7 +230,7 @@ a {
 
     font-size: 14px;
 
-    transition: .25s;
+    transition: 0.25s;
 
 }
 
@@ -246,15 +248,17 @@ a {
 
     border-radius: 30px;
 
-    border: 1px solid rgba(255,255,255,.08);
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
 
-    background: rgba(255,255,255,.04);
+    background:
+        rgba(255, 255, 255, 0.04);
 
     color: #94a3b8;
 
     font-size: 11px;
 
-    letter-spacing: .8px;
+    letter-spacing: 0.8px;
 
 }
 
@@ -272,14 +276,15 @@ a {
 
     margin-right: 7px;
 
-    box-shadow: 0 0 10px #22c55e;
+    box-shadow:
+        0 0 10px #22c55e;
 
 }
 
 
-/* =========================================
+/* =========================================================
    HERO
-========================================= */
+   ========================================================= */
 
 .hero {
 
@@ -319,9 +324,11 @@ a {
 
     border-radius: 30px;
 
-    background: rgba(59,130,246,.09);
+    background:
+        rgba(59, 130, 246, 0.09);
 
-    border: 1px solid rgba(96,165,250,.2);
+    border:
+        1px solid rgba(96, 165, 250, 0.2);
 
     color: #93c5fd;
 
@@ -342,7 +349,7 @@ a {
 
     font-size: clamp(55px, 6vw, 85px);
 
-    line-height: .98;
+    line-height: 0.98;
 
     letter-spacing: -4px;
 
@@ -406,9 +413,9 @@ a {
     font-weight: 600;
 
     box-shadow:
-        0 10px 30px rgba(37,99,235,.25);
+        0 10px 30px rgba(37, 99, 235, 0.25);
 
-    transition: .3s;
+    transition: 0.3s;
 
 }
 
@@ -418,7 +425,7 @@ a {
     transform: translateY(-3px);
 
     box-shadow:
-        0 15px 40px rgba(37,99,235,.4);
+        0 15px 40px rgba(37, 99, 235, 0.4);
 
 }
 
@@ -436,11 +443,13 @@ a {
 
     border-radius: 10px;
 
-    border: 1px solid rgba(255,255,255,.1);
+    border:
+        1px solid rgba(255, 255, 255, 0.1);
 
     color: #cbd5e1;
 
-    background: rgba(255,255,255,.03);
+    background:
+        rgba(255, 255, 255, 0.03);
 
 }
 
@@ -467,9 +476,9 @@ a {
 }
 
 
-/* =========================================
+/* =========================================================
    HERO VISUAL
-========================================= */
+   ========================================================= */
 
 .hero-visual {
 
@@ -504,7 +513,7 @@ a {
 
     filter: blur(80px);
 
-    opacity: .35;
+    opacity: 0.35;
 
 }
 
@@ -540,7 +549,7 @@ a {
     justify-content: center;
 
     box-shadow:
-        0 0 100px rgba(59,130,246,.4);
+        0 0 100px rgba(59, 130, 246, 0.4);
 
 }
 
@@ -589,14 +598,16 @@ a {
 
     border-radius: 13px;
 
-    background: rgba(10,18,38,.85);
+    background:
+        rgba(10, 18, 38, 0.85);
 
     backdrop-filter: blur(20px);
 
-    border: 1px solid rgba(255,255,255,.1);
+    border:
+        1px solid rgba(255, 255, 255, 0.1);
 
     box-shadow:
-        0 20px 50px rgba(0,0,0,.3);
+        0 20px 50px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -629,6 +640,7 @@ a {
 .card-top {
 
     top: 90px;
+
     right: 30px;
 
 }
@@ -637,6 +649,7 @@ a {
 .card-bottom {
 
     bottom: 90px;
+
     left: 20px;
 
 }
@@ -646,7 +659,8 @@ a {
 
     position: absolute;
 
-    border: 1px solid rgba(96,165,250,.12);
+    border:
+        1px solid rgba(96, 165, 250, 0.12);
 
     border-radius: 50%;
 
@@ -669,9 +683,9 @@ a {
 }
 
 
-/* =========================================
+/* =========================================================
    STATS
-========================================= */
+   ========================================================= */
 
 .stats {
 
@@ -689,9 +703,11 @@ a {
 
     border-radius: 18px;
 
-    background: rgba(255,255,255,.035);
+    background:
+        rgba(255, 255, 255, 0.035);
 
-    border: 1px solid rgba(255,255,255,.07);
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
 
     backdrop-filter: blur(20px);
 
@@ -731,14 +747,15 @@ a {
 
     height: 35px;
 
-    background: rgba(255,255,255,.1);
+    background:
+        rgba(255, 255, 255, 0.1);
 
 }
 
 
-/* =========================================
+/* =========================================================
    SECTIONS
-========================================= */
+   ========================================================= */
 
 .detector-section,
 .features-section,
@@ -803,9 +820,9 @@ a {
 }
 
 
-/* =========================================
-   DETECTOR CARD
-========================================= */
+/* =========================================================
+   DETECTOR
+   ========================================================= */
 
 .detector-wrapper {
 
@@ -827,14 +844,15 @@ a {
     background:
         linear-gradient(
             145deg,
-            rgba(30,41,70,.8),
-            rgba(10,16,34,.8)
+            rgba(30, 41, 70, 0.8),
+            rgba(10, 16, 34, 0.8)
         );
 
-    border: 1px solid rgba(148,163,184,.12);
+    border:
+        1px solid rgba(148, 163, 184, 0.12);
 
     box-shadow:
-        0 30px 100px rgba(0,0,0,.35);
+        0 30px 100px rgba(0, 0, 0, 0.35);
 
     backdrop-filter: blur(25px);
 
@@ -862,6 +880,7 @@ a {
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 
     border-radius: 14px;
@@ -869,8 +888,8 @@ a {
     background:
         linear-gradient(
             135deg,
-            rgba(59,130,246,.25),
-            rgba(124,58,237,.25)
+            rgba(59, 130, 246, 0.25),
+            rgba(124, 58, 237, 0.25)
         );
 
     font-size: 23px;
@@ -906,13 +925,15 @@ textarea {
 
     resize: vertical;
 
-    border: 1px solid rgba(148,163,184,.12);
+    border:
+        1px solid rgba(148, 163, 184, 0.12);
 
     border-radius: 15px;
 
     padding: 20px;
 
-    background: rgba(3,7,18,.75);
+    background:
+        rgba(3, 7, 18, 0.75);
 
     color: white;
 
@@ -924,7 +945,7 @@ textarea {
 
     line-height: 1.7;
 
-    transition: .3s;
+    transition: 0.3s;
 
 }
 
@@ -941,7 +962,7 @@ textarea:focus {
     border-color: #3b82f6;
 
     box-shadow:
-        0 0 0 3px rgba(59,130,246,.08);
+        0 0 0 3px rgba(59, 130, 246, 0.08);
 
 }
 
@@ -991,7 +1012,7 @@ button {
             #7c3aed
         );
 
-    transition: .3s;
+    transition: 0.3s;
 
 }
 
@@ -1001,7 +1022,7 @@ button:hover {
     transform: translateY(-2px);
 
     box-shadow:
-        0 12px 30px rgba(59,130,246,.3);
+        0 12px 30px rgba(59, 130, 246, 0.3);
 
 }
 
@@ -1015,9 +1036,9 @@ button span {
 }
 
 
-/* =========================================
+/* =========================================================
    RESULT
-========================================= */
+   ========================================================= */
 
 .result {
 
@@ -1033,9 +1054,11 @@ button span {
 
     border-radius: 15px;
 
-    background: rgba(59,130,246,.08);
+    background:
+        rgba(59, 130, 246, 0.08);
 
-    border: 1px solid rgba(96,165,250,.18);
+    border:
+        1px solid rgba(96, 165, 250, 0.18);
 
 }
 
@@ -1048,11 +1071,13 @@ button span {
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 
     border-radius: 13px;
 
-    background: rgba(255,255,255,.05);
+    background:
+        rgba(255, 255, 255, 0.05);
 
     font-size: 25px;
 
@@ -1079,9 +1104,9 @@ button span {
 }
 
 
-/* =========================================
+/* =========================================================
    FEATURES
-========================================= */
+   ========================================================= */
 
 .feature-grid {
 
@@ -1106,11 +1131,12 @@ button span {
     border-radius: 20px;
 
     background:
-        rgba(255,255,255,.035);
+        rgba(255, 255, 255, 0.035);
 
-    border: 1px solid rgba(255,255,255,.07);
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
 
-    transition: .3s;
+    transition: 0.3s;
 
 }
 
@@ -1120,10 +1146,10 @@ button span {
     transform: translateY(-7px);
 
     border-color:
-        rgba(96,165,250,.3);
+        rgba(96, 165, 250, 0.3);
 
     background:
-        rgba(59,130,246,.06);
+        rgba(59, 130, 246, 0.06);
 
 }
 
@@ -1170,9 +1196,9 @@ button span {
 }
 
 
-/* =========================================
+/* =========================================================
    HOW IT WORKS
-========================================= */
+   ========================================================= */
 
 .steps {
 
@@ -1220,7 +1246,7 @@ button span {
     font-weight: 700;
 
     box-shadow:
-        0 0 35px rgba(59,130,246,.25);
+        0 0 35px rgba(59, 130, 246, 0.25);
 
 }
 
@@ -1262,9 +1288,9 @@ button span {
 }
 
 
-/* =========================================
+/* =========================================================
    FOOTER
-========================================= */
+   ========================================================= */
 
 footer {
 
@@ -1273,10 +1299,10 @@ footer {
     text-align: center;
 
     border-top:
-        1px solid rgba(255,255,255,.06);
+        1px solid rgba(255, 255, 255, 0.06);
 
     background:
-        rgba(0,0,0,.15);
+        rgba(0, 0, 0, 0.15);
 
 }
 
@@ -1325,14 +1351,415 @@ footer small {
 }
 
 
-/* =========================================
+/* =========================================================
+   3D FLOATING BACKGROUND
+   ========================================================= */
+
+.floating-3d-bg {
+
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    perspective: 1000px;
+
+}
+
+
+/*
+   Keep all normal website content above
+   the 3D background.
+*/
+
+body > *:not(.floating-3d-bg) {
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+/* =========================================================
+   3D ORBS
+   ========================================================= */
+
+.orb {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(2px);
+
+    opacity: 0.28;
+
+    transform-style: preserve-3d;
+
+    animation:
+        floatOrb 10s ease-in-out infinite;
+
+    will-change: transform, translate;
+
+}
+
+
+.orb-1 {
+
+    width: 180px;
+    height: 180px;
+
+    top: 15%;
+    left: 8%;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            rgba(110, 190, 255, 0.55),
+            rgba(30, 90, 220, 0.08) 65%,
+            transparent 75%
+        );
+
+}
+
+
+.orb-2 {
+
+    width: 240px;
+    height: 240px;
+
+    right: 5%;
+    top: 35%;
+
+    background:
+        radial-gradient(
+            circle at 40% 35%,
+            rgba(70, 140, 255, 0.42),
+            rgba(20, 70, 180, 0.06) 65%,
+            transparent 75%
+        );
+
+    animation-delay: -3s;
+
+}
+
+
+.orb-3 {
+
+    width: 140px;
+    height: 140px;
+
+    bottom: 10%;
+    left: 42%;
+
+    background:
+        radial-gradient(
+            circle at 40% 30%,
+            rgba(100, 180, 255, 0.38),
+            transparent 70%
+        );
+
+    animation-delay: -6s;
+
+}
+
+
+/* =========================================================
+   FLOATING GEOMETRIC SHAPES
+   ========================================================= */
+
+.floating-shape {
+
+    position: absolute;
+
+    color:
+        rgba(130, 200, 255, 0.28);
+
+    font-size: 32px;
+
+    text-shadow:
+        0 0 20px rgba(70, 160, 255, 0.35);
+
+    transform-style: preserve-3d;
+
+    animation:
+        floatShape 7s ease-in-out infinite;
+
+    will-change: transform, translate;
+
+}
+
+
+.shape-1 {
+
+    top: 22%;
+    left: 25%;
+
+    animation-delay: -1s;
+
+}
+
+
+.shape-2 {
+
+    top: 65%;
+    left: 12%;
+
+    font-size: 22px;
+
+    animation-delay: -3s;
+
+}
+
+
+.shape-3 {
+
+    top: 20%;
+    right: 20%;
+
+    font-size: 42px;
+
+    animation-delay: -5s;
+
+}
+
+
+.shape-4 {
+
+    bottom: 18%;
+    right: 25%;
+
+    font-size: 26px;
+
+    animation-delay: -2s;
+
+}
+
+
+/* =========================================================
+   NETWORK LINES
+   ========================================================= */
+
+.network-line {
+
+    position: absolute;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(100, 190, 255, 0.22),
+            transparent
+        );
+
+    transform-origin: left center;
+
+    will-change: transform, translate;
+
+}
+
+
+.line-1 {
+
+    width: 300px;
+
+    top: 30%;
+    left: 15%;
+
+    transform: rotate(25deg);
+
+}
+
+
+.line-2 {
+
+    width: 260px;
+
+    top: 60%;
+    right: 10%;
+
+    transform: rotate(-25deg);
+
+}
+
+
+.line-3 {
+
+    width: 220px;
+
+    top: 75%;
+    left: 25%;
+
+    transform: rotate(-12deg);
+
+}
+
+
+/* =========================================================
+   DEPTH RINGS
+   ========================================================= */
+
+.depth-ring {
+
+    position: absolute;
+
+    border:
+        1px solid rgba(100, 190, 255, 0.12);
+
+    border-radius: 50%;
+
+    transform-style: preserve-3d;
+
+    animation:
+        ringFloat 12s ease-in-out infinite;
+
+    will-change: transform, translate;
+
+}
+
+
+.ring-1 {
+
+    width: 420px;
+    height: 420px;
+
+    right: -130px;
+    top: 15%;
+
+}
+
+
+.ring-2 {
+
+    width: 300px;
+    height: 300px;
+
+    left: -100px;
+    bottom: 5%;
+
+    animation-delay: -4s;
+
+}
+
+
+.ring-3 {
+
+    width: 180px;
+    height: 180px;
+
+    left: 48%;
+    top: 12%;
+
+    animation-delay: -7s;
+
+}
+
+
+/* =========================================================
+   FLOATING ANIMATIONS
+   ========================================================= */
+
+@keyframes floatOrb {
+
+    0%,
+    100% {
+
+        transform:
+            translate3d(0, 0, 0)
+            scale(1);
+
+    }
+
+    50% {
+
+        transform:
+            translate3d(15px, -25px, 40px)
+            scale(1.04);
+
+    }
+
+}
+
+
+@keyframes floatShape {
+
+    0%,
+    100% {
+
+        transform:
+            translate3d(0, 0, 0)
+            rotate(0deg);
+
+    }
+
+    50% {
+
+        transform:
+            translate3d(12px, -20px, 45px)
+            rotate(12deg);
+
+    }
+
+}
+
+
+@keyframes ringFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translate3d(0, 0, 0)
+            rotateX(65deg);
+
+    }
+
+    50% {
+
+        transform:
+            translate3d(10px, -15px, 30px)
+            rotateX(70deg);
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .orb,
+    .floating-shape,
+    .depth-ring {
+
+        animation: none;
+
+    }
+
+}
+
+
+/* =========================================================
    RESPONSIVE
-========================================= */
+   ========================================================= */
 
 @media (max-width: 850px) {
 
     .nav-links {
+
         display: none;
+
     }
 
 
@@ -1357,6 +1784,7 @@ footer small {
     .hero-content > p {
 
         margin-left: auto;
+
         margin-right: auto;
 
     }
@@ -1406,6 +1834,13 @@ footer small {
         width: 1px;
 
         height: 50px;
+
+    }
+
+
+    .floating-3d-bg {
+
+        opacity: 0.75;
 
     }
 
